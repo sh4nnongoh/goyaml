@@ -1,0 +1,19 @@
+apiVersion: v1
+metadata: &metadata
+  name: testSvc
+  label: test
+specification:
+  domainObject:
+    - name: someDomainObject
+      import: github.com/sh4nnongoh/someDomainObject
+  endpoint:
+    - name: add
+      input: 
+        method: addMethod
+        variable:
+          - int 
+          - int
+      metadata: *metadata
+  transport:
+    - type: http
+      metadata: *metadata
