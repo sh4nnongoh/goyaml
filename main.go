@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"gopkg.in/yaml.v2"
+	yaml "gopkg.in/yaml.v2"
 )
 
 func main() {
